@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Car Parts Shop</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<p style="text-align:center;">
+
+<h1>About us</h1>
+<h2>Who Are We?</h2>
+<h3>CAR PARTS SHOP</h3>
+<p style="text-align: justify;">Leading Online Car Spare Parts in India</p>
+<p style="text-align: justify;">Everything you need under one roof.</p>
+<p style="text-align: justify;">We Car Spare Parts Shop came with a vision to make car maintenance hassle free. Getting a car is like getting a child they need our care concern and also all the basic needs. We understand your love towards your car and also the troubles you face while car maintenance, which made us set up our vision.</p>
+<p style="text-align: justify;">At Car Spare Parts Shop, we strive to make it easier for you to get your hands on all the things your car needs. All the products that you order, we deliver them straight to your door. All shipping is completely free for orders above Rs.500. Our company philosophy is pretty simple: We want to offer the best possible collection of car products and deals for our customers. Our endeavor is to ensure that you get the widest possible choice of top rated products at the best possible price anywhere in India combined with the best possible service and timely delivery of products at your doorstep.</p>
+<p style="text-align: justify;">Now there is no need to drive and search for the car parts shops then juggle around what to buy? What to leave? You can forget everything but after all these troubles, the same old food, same old discount, and same old fashion. We understand your dilemma so all you need to do is to visit our website and choose whatever you like and even you have a doubt our experts and customer support are available 24*7 at your services.</p>
+<p style="text-align: justify;">Join Car Parts Shop to discover new products, purchase them online and receive them at your convenience. Avail our various offers every week.</p>
+<p style="text-align: justify;">Once again, Car Spare Parts Shop welcomes you. We are always here for you and them.</p>
+<br>
+<b>Car Spare Parts Grooming Shop</b><br>
+<b>Address: </b>Jai Ganesh Vision Akurdi Pune, Maharshtra - India 411035 <br>
+<b>Call us now:</b> +91 98233 74979 <br>
+<b>Email: </b>info@carpartsshop.com <br>
+</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+
+</html>
